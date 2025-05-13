@@ -4,8 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/header/logo-icon.svg" type="image/x-icon">
     <title>Nike Sportswear</title>
 </head>
@@ -64,9 +69,111 @@
             <button class="cover-section-button">Find Your Shoe</button>
         </div>
     </section>
+    <!-- filters-section -->
+    <section class="filters-section">
+        <!-- filters-header -->
+        <div class="filters-section-header">
+            <h5 class="filters-section-title">New (500)</h5>
+            <div class="filters-section-header-buttons">
+                <button class="filters-section-filter-btn">
+                    <span class="hide-filters">Hide Filters</span>
+                    <img src="./images/pagination/filter-icon.svg" alt="filter icon">
+                </button>
+                <button class="sort-by-btn">
+                    <span>Sort By</span>
+                    <img src="./images/pagination/sort-icon.svg" alt="sort icon">
+                </button>
+            </div>
+        </div>
+        <!-- filters-main -->
+        <div class="filters-section-main">
+            <div class="filters-section-bar">
+                <nav class="filters-bar-nav">
+                    <ul class="filters-bar-list">
+                        <li><a href="#" class="filters-bar_link">Shoes</a></li>
+                        <li><a href="#" class="filters-bar_link">Sports Bras</a></li>
+                        <li><a href="#" class="filters-bar_link">Tops & T-Shirts</a></li>
+                        <li><a href="#" class="filters-bar_link">Hoodies & Sweatshirts</a></li>
+                        <li><a href="#" class="filters-bar_link">Jackets</a></li>
+                        <li><a href="#" class="filters-bar_link">Trousers & Tights</a></li>
+                        <li><a href="#" class="filters-bar_link">Shorts</a></li>
+                        <li><a href="#" class="filters-bar_link">Tracksuits</a></li>
+                        <li><a href="#" class="filters-bar_link">Jumpsuits & Rompers</a></li>
+                        <li><a href="#" class="filters-bar_link">Skirts & Dresses</a></li>
+                        <li><a href="#" class="filters-bar_link">Socks</a></li>
+                        <li><a href="#" class="filters-bar_link">Accessories & Equipment</a></li>
+                    </ul>
+                </nav>
+                <div class="drop-down-menu-container">
+                    <div class="drop-down-menu">
+                        <div class="drop-down-menu-header">
+                            <h5>Gender</h5>
+                            <img src="./images/pagination/select-icon.svg" alt="select icon">
+                        </div>
+                        <div class="drop-down-menu-checkboxs">
+                            <div class="checkbox-label">
+                                <input type="checkbox">
+                                <label for="">Men</label>
+                            </div>
+                            <div class="checkbox-label">
+                                <input type="checkbox">
+                                <label for="">Women</label>
+                            </div>
+                            <div class="checkbox-label">
+                                <input type="checkbox">
+                                <label for="">Unisex</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <div class="drop-down-menu-header">
+                            <h5>Kids</h5>
+                            <img src="./images/pagination/select-icon.svg" alt="select icon">
+                        </div>
+                        <div class="drop-down-menu-checkboxs">
+                            <div class="checkbox-label">
+                                <input type="checkbox">
+                                <label for="">Boys</label>
+                            </div>
+                            <div class="checkbox-label">
+                                <input type="checkbox">
+                                <label for="">Girls</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="drop-down-menu">
+                        <div class="drop-down-menu-header">
+                            <h5>Shop By Price</h5>
+                            <img src="./images/pagination/select-icon.svg" alt="select icon">
+                        </div>
+                        <div class="drop-down-menu-checkboxs">
+                            <div class="checkbox-label">
+                                <input type="checkbox">
+                                <label for="">Under $ 2 500.00</label>
+                            </div>
+                            <div class="checkbox-label">
+                                <input type="checkbox">
+                                <label for="">$ 2 501.00 - $</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cards ----------------------- -->
+            <div class="filters-section-cards"></div>
+        </div>
+        <!-- pagination -->
+        <nav aria-label="Page navigation" class="page-navigation">
+            <ul class="pagination justify-content-center">
+            </ul>
+        </nav>
+    </section>
 
 
     <!-- js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
 </body>
 
