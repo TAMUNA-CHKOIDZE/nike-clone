@@ -1,1 +1,238 @@
  /* This file contains the main styles for the website. */
+ @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+
+ :root {
+     --color-gray-100: #F5F5F5;
+     --color-gray-200: #FFFFFF;
+     --color-gray-300: #CCCCCC;
+     --color-gray-400: #7E7E7E;
+     --color-gray-500: #757575;
+     --color-black: #111111;
+     --color-accent: #9E3500;
+     --radius2: 2px;
+     --radius4: 4px;
+     --radius30: 30px;
+     --radius100: 100px;
+     --transition: .3s linear;
+     --font: 'Helvetica Neue', sans-serif;
+ }
+
+ body {
+     font-family: var(--font);
+ }
+
+ /* header  */
+ header {
+     width: min(100%, 1440px);
+     margin: auto;
+     transition: top 0.3s ease;
+     top: -80px;
+ }
+
+ .header-fixed {
+     position: fixed;
+     top: 0;
+     left: 50%;
+     transform: translateX(-50%);
+ }
+
+ /* top-navigation */
+ .top-nav {
+     height: 36px;
+     padding-inline: 40px;
+     background: var(--color-gray-100);
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .top-nav-list {
+     display: flex;
+     column-gap: 14px;
+ }
+
+ .line {
+     padding-right: 12px;
+     border-right: 2px solid var(--color-black);
+ }
+
+ .top-nav-link {
+     font-weight: 400;
+     font-size: 12px;
+     line-height: 18px;
+     letter-spacing: 0%;
+     color: var(--color-black);
+     transition: var(--transition);
+ }
+
+ .top-nav-link:hover {
+     opacity: .6;
+ }
+
+ /* main-navigation */
+ .main-nav {
+     height: 60px;
+     padding-inline: 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+ }
+
+ .main-nav-list {
+     display: flex;
+     column-gap: 24px;
+ }
+
+ .main-nav-link {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 0%;
+     text-align: center;
+     color: var(--color-black);
+     position: relative;
+     transition: var(--transition);
+ }
+
+ .main-nav-link::after {
+     content: "";
+     position: absolute;
+     left: 0;
+     bottom: -4px;
+     width: 100%;
+     height: 2px;
+     background: var(--color-black);
+     transform: scaleX(0);
+     transform-origin: left;
+     transition: transform 0.3s ease;
+ }
+
+ .main-nav-link:hover::after {
+     transform: scaleX(1);
+ }
+
+ .main-nav-icons {
+     display: flex;
+     align-items: center;
+     column-gap: 20px;
+ }
+
+ form {
+     width: 180px;
+     height: 40px;
+     background: var(--color-gray-100);
+     border-radius: var(--radius100);
+     transition: var(--transition);
+     position: relative;
+ }
+
+ .nav-search-btn {
+     border-radius: var(--radius100);
+     border: none;
+     width: 40px;
+     height: 100%;
+     background: transparent;
+     cursor: pointer;
+     transition: var(--transition);
+     position: absolute;
+ }
+
+ input[type=search] {
+     width: 100%;
+     height: 100%;
+     border-radius: var(--radius100);
+     outline: none;
+     border: none;
+     padding-left: 46px;
+     background: transparent;
+     transition: var(--transition);
+ }
+
+ ::placeholder {
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 100%;
+     letter-spacing: 0%;
+     color: var(--color-gray-400);
+ }
+
+ form:hover {
+     background: var(--color-gray-300);
+ }
+
+ form:hover .nav-search-btn {
+     background: var(--color-gray-100);
+ }
+
+ .nav-icons-link {
+     width: 40px;
+     height: 40px;
+     border-radius: var(--radius100);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     transition: var(--transition);
+ }
+
+ .nav-icons-link:hover {
+     background: var(--color-gray-300);
+ }
+
+ /* cover-section */
+ .cover-section {
+     width: min(100%, 1360px);
+     margin: 10px auto 80px;
+ }
+
+ .cover-section-img {
+     width: 100%;
+     height: 700px;
+     object-fit: cover;
+ }
+
+ .cover-section-caption {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     margin-top: 48px;
+ }
+
+ .cover-section-title {
+     font-weight: 500;
+     font-size: 54px;
+     line-height: 60px;
+     letter-spacing: 0%;
+     text-align: center;
+     text-transform: uppercase;
+     margin-bottom: 24px;
+     color: var(--color-black);
+ }
+
+ .cover-section-subtitle {
+     font-family: Helvetica Neue;
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 24px;
+     letter-spacing: 0%;
+     text-align: center;
+     color: var(--color-black);
+     margin-bottom: 30px;
+ }
+
+ .cover-section-button {
+     width: 152px;
+     height: 40px;
+     border-radius: var(--radius30);
+     background: var(--color-black);
+     border: none;
+     font-size: 15px;
+     line-height: 24px;
+     letter-spacing: 0%;
+     text-align: center;
+     color: var(--color-gray-200);
+     transition: var(--transition);
+ }
+
+ .cover-section-button:hover {
+     background: var(--color-gray-500);
+ }
