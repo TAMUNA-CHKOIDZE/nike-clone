@@ -17,48 +17,7 @@
 
 <body>
     <!-- header -->
-    <header>
-        <!-- top-navigation -->
-        <nav class="top-nav">
-            <a href="#" aria-label="User icon">
-                <img src="./images/header/man-icon.svg" alt="jordan icon" class="bfr-fixing">
-            </a>
-            <ul class="top-nav-list">
-                <li class="line"><a href="#" class="top-nav-link">Find a Store</a></li>
-                <li class="line"><a href="#" class="top-nav-link">Help</a></li>
-                <li class="line"><a href="#" class="top-nav-link">Join Us</a></li>
-                <li><a href="#" class="top-nav-link">Sign In</a></li>
-            </ul>
-        </nav>
-        <!-- main-navigation -->
-        <nav class="main-nav">
-            <a href="./index.html">
-                <img src="./images/header/logo-icon.svg" alt="nike logo">
-            </a>
-            <ul class="main-nav-list">
-                <li><a href="#" class="main-nav-link">New & Featured</a></li>
-                <li><a href="#" class="main-nav-link">Men</a></li>
-                <li><a href="#" class="main-nav-link">Women</a></li>
-                <li><a href="#" class="main-nav-link">Kids</a></li>
-                <li><a href="#" class="main-nav-link">Sale</a></li>
-                <li><a href="#" class="main-nav-link">SNKRS</a></li>
-            </ul>
-            <div class="main-nav-icons">
-                <form id="search-form">
-                    <button aria-label="Search" class="nav-search-btn">
-                        <img src="./images/header/search-icon.svg" alt="Search Icon">
-                    </button>
-                    <input type="search" name="search" placeholder="Search">
-                </form>
-                <a href="#" aria-label="Favorites" class="nav-icons-link">
-                    <img src="./images/header/favorite-icon.svg" alt="Favorite Icon">
-                </a>
-                <a href="#" aria-label="Shopping Cart" class="nav-icons-link">
-                    <img src="./images/header/cart-icon.svg" alt="Cart Icon">
-                </a>
-            </div>
-        </nav>
-    </header>
+    <header id="header"></header>
     <!-- cover-section -->
     <section class="cover-section">
         <img src="./images/cover/cover.png" class="cover-section-img" alt="nike shoe">
@@ -168,13 +127,38 @@
             </ul>
         </nav>
     </section>
-
-
+    <!-- essentials-section  -->
+    <section class="essentials-section">
+        <div class="essentials-section-header">
+            <h2 class="essentials-header-title">FLIGHT ESSENTIALS</h2>
+            <h6 class="essentials-header-subtitle">Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.</h6>
+        </div>
+        <section class="essentials-inner-section">
+            <h5 class="essentials-inner-section-title">The Essentials</h5>
+            <div class="essentials-inner-section-cards">
+                <div class="essentials-card">
+                    <img src="./images/essentials/essential1.svg" alt="item" class="essentials-card-img">
+                    <button class="essentials-card-btn">Men's</button>
+                </div>
+                <div class="essentials-card">
+                    <img src="./images/essentials/essential2.svg" alt="item" class="essentials-card-img">
+                    <button class="essentials-card-btn">Women's</button>
+                </div>
+                <div class="essentials-card">
+                    <img src="./images/essentials/essential3.svg" alt="item" class="essentials-card-img">
+                    <button class="essentials-card-btn">Kids'</button>
+                </div>
+            </div>
+        </section>
+    </section>
+    <!-- footer -->
+    <footer id="footer"></footer>
     <!-- js  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
         crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 
 </html>

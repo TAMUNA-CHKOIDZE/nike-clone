@@ -388,9 +388,7 @@
      color: var(--color-black);
  }
 
-
  .filters-section-cards {
-     /* flex: 1 1 1076px; */
      width: 1076px;
      display: grid;
      grid-template-columns: repeat(3, 1fr);
@@ -443,7 +441,79 @@
      margin-top: 51px;
  }
 
+ /* essentials-section */
+ .essentials-section {
+     width: min(100%, 1360px);
+     margin: 120px auto 20px;
+ }
 
+ .essentials-section-header {
+     text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     row-gap: 24px;
+     margin-bottom: 30px;
+ }
+
+ .essentials-header-title {
+     font-weight: 500;
+     font-size: 52px;
+     line-height: 60px;
+     letter-spacing: 0%;
+     text-transform: uppercase;
+     color: var(--color-black);
+ }
+
+ .essentials-header-subtitle {
+     font-weight: 400;
+     font-size: 15px;
+     line-height: 24px;
+     letter-spacing: 0%;
+     color: var(--color-black);
+ }
+
+ .essentials-inner-section-title {
+     font-weight: 500;
+     font-size: 23px;
+     line-height: 28px;
+     letter-spacing: 0%;
+     color: var(--color-black);
+     margin-bottom: 24px;
+ }
+
+ .essentials-inner-section-cards {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-template-rows: 540px;
+     column-gap: 12px;
+ }
+
+ .essentials-card {
+     position: relative;
+ }
+
+ .essentials-card-img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
+
+ .essentials-card-btn {
+     position: absolute;
+     left: 48px;
+     bottom: 48px;
+     width: 86px;
+     height: 40px;
+     border-radius: var(--radius30);
+     border: none;
+     background: var(--color-gray-200);
+     font-weight: 500;
+     font-size: 15px;
+     line-height: 24px;
+     letter-spacing: 0%;
+     color: var(--color-black);
+ }
 
 
  /* product page ---------------------- */

@@ -1,42 +1,51 @@
-const header = document.querySelector("header");
-const topNav = document.querySelector(".top-nav");
-const bfrFixingIcon = document.querySelector(".bfr-fixing");
-const topNavlinks = document.querySelectorAll(".top-nav-link");
-const lines = document.querySelectorAll(".line");
-const mainNav = document.querySelector(".main-nav");
+import { loadComponent } from "./load-component.js";
+
+// const header = document.querySelector("header");
+// const topNav = document.querySelector(".top-nav");
+// const bfrFixingIcon = document.querySelector(".bfr-fixing");
+// const topNavlinks = document.querySelectorAll(".top-nav-link");
+// const lines = document.querySelectorAll(".line");
+// const mainNav = document.querySelector(".main-nav");
 const hideFilterBtn = document.querySelector(".filters-section-filter-btn");
 const filterBar = document.querySelector(".filters-section-bar");
 const productsContainer = document.querySelector(".filters-section-cards");
 const paginationContainer = document.querySelector(".pagination");
 
-// Logic for fixing the header on scroll--------------------
-window.addEventListener("scroll", handleSroll);
-
-function handleSroll() {
-  if (window.scrollY > 80) {
-    header.classList.add("header-fixed");
-    topNav.style.background = "var(--color-black)";
-    mainNav.style.background = "var(--color-gray-300)";
-    bfrFixingIcon.src = "./images/header/man-white.svg";
-    topNavlinks.forEach((elem) => {
-      elem.style.color = "var(--color-gray-200)";
-    });
-    lines.forEach((elem) => {
-      elem.style.borderRightColor = "var(--color-gray-200)";
-    });
-  } else {
-    header.classList.remove("header-fixed");
-    topNav.style.background = "var(--color-gray-100)";
-    mainNav.style.background = "var(--color-gray-200)";
-    bfrFixingIcon.src = "./images/header/man-icon.svg";
-    topNavlinks.forEach((elem) => {
-      elem.style.color = "var(--color-black)";
-    });
-    lines.forEach((elem) => {
-      elem.style.borderRightColor = "var(--color-black)";
-    });
-  }
-}
+  // Logic for fixing the header on scroll--------------------
+loadComponent("header", "header.html", () => {
+  const mainNav = document.querySelector(".main-nav");
+  const header = document.querySelector("header");
+  const topNav = document.querySelector(".top-nav");
+  const bfrFixingIcon = document.querySelector(".bfr-fixing");
+  const topNavlinks = document.querySelectorAll(".top-nav-link");
+  const lines = document.querySelectorAll(".line");
+  
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 80) {
+      header.classList.add("header-fixed");
+      topNav.style.background = "var(--color-black)";
+      mainNav.style.background = "var(--color-gray-300)";
+      bfrFixingIcon.src = "./images/header/man-white.svg";
+      topNavlinks.forEach((elem) => {
+        elem.style.color = "var(--color-gray-200)";
+      });
+      lines.forEach((elem) => {
+        elem.style.borderRightColor = "var(--color-gray-200)";
+      });
+    } else {
+      header.classList.remove("header-fixed");
+      topNav.style.background = "var(--color-gray-100)";
+      mainNav.style.background = "var(--color-gray-200)";
+      bfrFixingIcon.src = "./images/header/man-icon.svg";
+      topNavlinks.forEach((elem) => {
+        elem.style.color = "var(--color-black)";
+      });
+      lines.forEach((elem) => {
+        elem.style.borderRightColor = "var(--color-black)";
+      });
+    }
+  });
+});
 
 // hide filters -------------------------
 hideFilterBtn.addEventListener("click", () => {
@@ -131,6 +140,3 @@ function renderPagination() {
 }
 
 fetchProducts();
-
-
-

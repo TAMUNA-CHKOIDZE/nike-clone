@@ -1,3 +1,5 @@
+
+
 const queryString = window.location.search; // "?id=3"
 const urlParams = new URLSearchParams(queryString); // ქმნის ახალ ობიექტს URLSearchParams, რომელიც საშუალებას გაძლევს იოლად წაიკითხო URL-ში არსებული query პარამეტრები — ანუ ისეთი პარამეტრები, რომლებიც მოჰყვება ? სიმბოლოს ბმულში.
 const idFromUrl = urlParams.get("id"); // "3" (აბრუნებს string-ის სახით)
