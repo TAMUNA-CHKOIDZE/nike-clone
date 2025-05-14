@@ -16,6 +16,17 @@
 </head>
 
 <body>
+    <!-- overlay-section -->
+    <section id="overlay-section" class="overlay">
+        <img src="./images/header/logo-icon.svg" alt="nike logo" class="logo">
+        <form id="search-overlay-form" class="overlay-form">
+            <input type="search" name="search" placeholder="Search..." id="overlay-submit-input" required>
+            <button type="submit" id="overlay-submit-btn" class="overlay-submit-btn">
+                <img src="./images/header/search-icon.svg" alt="Search Icon">
+            </button>
+        </form>
+        <button type="reset" id="cancel-btn" class="cancel-btn">Cancel</button>
+    </section>
     <!-- header -->
     <header id="header"></header>
     <!-- cover-section -->
@@ -30,108 +41,126 @@
     </section>
     <!-- filters-section -->
     <section class="filters-section">
-        <!-- filters-header -->
-        <div class="filters-section-header">
-            <h5 class="filters-section-title">New (500)</h5>
-            <div class="filters-section-header-buttons">
-                <button class="filters-section-filter-btn">
-                    <span class="hide-filters">Hide Filters</span>
-                    <img src="./images/pagination/filter-icon.svg" alt="filter icon">
-                </button>
-                <button class="sort-by-btn">
-                    <span>Sort By</span>
-                    <img src="./images/pagination/sort-icon.svg" alt="sort icon">
-                </button>
+        <!-- filters-content მჭირდება იმისთვის, რომ როცა მომხმარებლი არასორად მოძებნის ერორის ტექსტი გამოჩნდეს ამ კონტენტის ნაცვლად -->
+        <div id="filters-content">
+            <!-- filters-header -->
+            <div class="filters-section-header">
+                <h5 class="filters-section-title">New (500)</h5>
+                <div class="filters-section-header-buttons">
+                    <button class="filters-section-filter-btn">
+                        <span class="hide-filters">Hide Filters</span>
+                        <img src="./images/pagination/filter-icon.svg" alt="filter icon">
+                    </button>
+                    <button class="sort-by-btn">
+                        <span>Sort By</span>
+                        <img src="./images/pagination/sort-icon.svg" alt="sort icon">
+                    </button>
+                </div>
             </div>
-        </div>
-        <!-- filters-main -->
-        <div class="filters-section-main">
-            <div class="filters-section-bar">
-                <nav class="filters-bar-nav">
-                    <ul class="filters-bar-list">
-                        <li><a href="#" class="filters-bar_link">Shoes</a></li>
-                        <li><a href="#" class="filters-bar_link">Sports Bras</a></li>
-                        <li><a href="#" class="filters-bar_link">Tops & T-Shirts</a></li>
-                        <li><a href="#" class="filters-bar_link">Hoodies & Sweatshirts</a></li>
-                        <li><a href="#" class="filters-bar_link">Jackets</a></li>
-                        <li><a href="#" class="filters-bar_link">Trousers & Tights</a></li>
-                        <li><a href="#" class="filters-bar_link">Shorts</a></li>
-                        <li><a href="#" class="filters-bar_link">Tracksuits</a></li>
-                        <li><a href="#" class="filters-bar_link">Jumpsuits & Rompers</a></li>
-                        <li><a href="#" class="filters-bar_link">Skirts & Dresses</a></li>
-                        <li><a href="#" class="filters-bar_link">Socks</a></li>
-                        <li><a href="#" class="filters-bar_link">Accessories & Equipment</a></li>
-                    </ul>
-                </nav>
-                <div class="drop-down-menu-container">
-                    <div class="drop-down-menu">
-                        <div class="drop-down-menu-header">
-                            <h5>Gender</h5>
-                            <img src="./images/pagination/select-icon.svg" alt="select icon">
-                        </div>
-                        <div class="drop-down-menu-checkboxs">
-                            <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label for="">Men</label>
+            <!-- filters-main -->
+            <div class="filters-section-main">
+                <div class="filters-section-bar">
+                    <nav class="filters-bar-nav">
+                        <ul class="filters-bar-list">
+                            <li><a href="#" class="filters-bar_link">Shoes</a></li>
+                            <li><a href="#" class="filters-bar_link">Sports Bras</a></li>
+                            <li><a href="#" class="filters-bar_link">Tops & T-Shirts</a></li>
+                            <li><a href="#" class="filters-bar_link">Hoodies & Sweatshirts</a></li>
+                            <li><a href="#" class="filters-bar_link">Jackets</a></li>
+                            <li><a href="#" class="filters-bar_link">Trousers & Tights</a></li>
+                            <li><a href="#" class="filters-bar_link">Shorts</a></li>
+                            <li><a href="#" class="filters-bar_link">Tracksuits</a></li>
+                            <li><a href="#" class="filters-bar_link">Jumpsuits & Rompers</a></li>
+                            <li><a href="#" class="filters-bar_link">Skirts & Dresses</a></li>
+                            <li><a href="#" class="filters-bar_link">Socks</a></li>
+                            <li><a href="#" class="filters-bar_link">Accessories & Equipment</a></li>
+                        </ul>
+                    </nav>
+                    <div class="drop-down-menu-container">
+                        <div class="drop-down-menu">
+                            <div class="drop-down-menu-header">
+                                <h5>Gender</h5>
+                                <img src="./images/pagination/select-icon.svg" alt="select icon">
                             </div>
-                            <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label for="">Women</label>
-                            </div>
-                            <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label for="">Unisex</label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="drop-down-menu">
-                        <div class="drop-down-menu-header">
-                            <h5>Kids</h5>
-                            <img src="./images/pagination/select-icon.svg" alt="select icon">
-                        </div>
-                        <div class="drop-down-menu-checkboxs">
-                            <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label for="">Boys</label>
-                            </div>
-                            <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label for="">Girls</label>
+                            <div class="drop-down-menu-checkboxs">
+                                <div class="checkbox-label">
+                                    <input type="checkbox">
+                                    <label for="">Men</label>
+                                </div>
+                                <div class="checkbox-label">
+                                    <input type="checkbox">
+                                    <label for="">Women</label>
+                                </div>
+                                <div class="checkbox-label">
+                                    <input type="checkbox">
+                                    <label for="">Unisex</label>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="drop-down-menu">
-                        <div class="drop-down-menu-header">
-                            <h5>Shop By Price</h5>
-                            <img src="./images/pagination/select-icon.svg" alt="select icon">
-                        </div>
-                        <div class="drop-down-menu-checkboxs">
-                            <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label for="">Under $ 2 500.00</label>
+                        <div class="drop-down-menu">
+                            <div class="drop-down-menu-header">
+                                <h5>Kids</h5>
+                                <img src="./images/pagination/select-icon.svg" alt="select icon">
                             </div>
-                            <div class="checkbox-label">
-                                <input type="checkbox">
-                                <label for="">$ 2 501.00 - $</label>
+                            <div class="drop-down-menu-checkboxs">
+                                <div class="checkbox-label">
+                                    <input type="checkbox">
+                                    <label for="">Boys</label>
+                                </div>
+                                <div class="checkbox-label">
+                                    <input type="checkbox">
+                                    <label for="">Girls</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drop-down-menu">
+                            <div class="drop-down-menu-header">
+                                <h5>Shop By Price</h5>
+                                <img src="./images/pagination/select-icon.svg" alt="select icon">
+                            </div>
+                            <div class="drop-down-menu-checkboxs">
+                                <div class="checkbox-label">
+                                    <input type="checkbox">
+                                    <label for="">Under $ 2 500.00</label>
+                                </div>
+                                <div class="checkbox-label">
+                                    <input type="checkbox">
+                                    <label for="">$ 2 501.00 - $</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="drop-down-menu">
+                            <div class="drop-down-menu-header">
+                                <h5>Brand</h5>
+                                <img src="./images/pagination/select-icon.svg" alt="select icon">
+                            </div>
+                            <div class="drop-down-menu-checkboxs">
+                                <div class="checkbox-label">
+                                    <input type="checkbox">
+                                    <label for="">Nike Sportswear</label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <!-- cards ----------------------- -->
+                <div class="filters-section-cards"></div>
             </div>
-            <!-- cards ----------------------- -->
-            <div class="filters-section-cards"></div>
+            <!-- pagination -->
+            <nav aria-label="Page navigation" class="page-navigation">
+                <ul class="pagination justify-content-center">
+                </ul>
+            </nav>
         </div>
-        <!-- pagination -->
-        <nav aria-label="Page navigation" class="page-navigation">
-            <ul class="pagination justify-content-center">
-            </ul>
-        </nav>
+        <!-- ეს უნდა იყოს დამალული  -->
+        <div id="filters-error" style="display: none;"></div>
     </section>
     <!-- essentials-section  -->
     <section class="essentials-section">
         <div class="essentials-section-header">
             <h2 class="essentials-header-title">FLIGHT ESSENTIALS</h2>
-            <h6 class="essentials-header-subtitle">Your built-to-last, all-week wears—but with style only Jordan Brand can deliver.</h6>
+            <h6 class="essentials-header-subtitle">Your built-to-last, all-week wears—but with style only Jordan Brand
+                can deliver.</h6>
         </div>
         <section class="essentials-inner-section">
             <h5 class="essentials-inner-section-title">The Essentials</h5>
