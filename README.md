@@ -8,6 +8,7 @@ This project is a clone of the official Nike website, built using **HTML**, **CS
 - **Search Functionality**: The project includes a fully functional search feature that opens an overlay form. The products are filtered by the search term entered by the user.
 - **Pagination**: Products are displayed across multiple pages with **pagination** to navigate between pages.
 - **Product Detail Page**: Clicking on a product redirects the user to a detailed page with more information about the selected product.
+- **Filter Dropdown Menus**: The filter section includes dropdown menus that allow users to expand and collapse different filter categories, implemented using JavaScript.
 
 ### Technologies Used
 - **HTML**: Basic structure and content of the site.
