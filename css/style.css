@@ -432,12 +432,18 @@
      align-items: center;
      justify-content: space-between;
      margin-bottom: 4px;
+     cursor: pointer;
  }
 
  .drop-down-menu-checkboxs {
      display: flex;
      flex-direction: column;
      row-gap: 4px;
+     display: none;
+ }
+
+ .drop-down-menu-checkboxs.active {
+     display: flex;
  }
 
  .checkbox-label {

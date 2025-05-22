@@ -236,3 +236,21 @@ function renderPagination() {
 }
 
 fetchProducts();
+
+// drop down menu --------------------------------------------------
+const dropDownMenuContainer = document.querySelector(".drop-down-menu-container");
+
+dropDownMenuContainer.addEventListener("click", function (event) {
+  const header = event.target.closest(".drop-down-menu-header");
+  if (header) {
+    const menu = header.nextElementSibling;
+    const arrow = header.querySelector("img"); 
+
+    if (menu && menu.classList.contains("drop-down-menu-checkboxs")) {
+      const isOpen = menu.classList.toggle("active");
+      arrow.src = isOpen
+        ? "./images/pagination/sort-icon.svg"
+        : "./images/pagination/select-icon.svg";
+    }
+  }
+});
